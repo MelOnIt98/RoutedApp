@@ -1,0 +1,24 @@
+<h3>Enter Student Entry</h3>
+<form (ngSubmit)="onSubmit(studentForm)" #studentForm="ngForm">
+<div>
+    <label>Student Number: </label>
+    <input type="text" id="num" ngModel name="num" #num="ngModel" required pattern="^[0-9]+$"><br>
+</div>
+<div>
+    <label>First Name: </label>
+    <input type="text" id="fname" ngModel name="fname" #fname="ngModel" required pattern ="^[A-z\s]+$" ><br>
+</div>
+<div>
+    <label>Last Name: </label>
+    <input type="text" id="lname" ngModel name="lname" #lname="ngModel" required pattern ="^[A-z\s]+$"><br>
+</div>
+<div>
+    <label>Program: </label>
+    <input type="text" id="prog" ngModel name="prog" #prog="ngModel" required pattern = "^[A-z\s]+$"><br>
+</div>
+<div>
+    <label>Year: </label>
+    <input type="text" id="year" ngModel name="year" #year="ngModel" required pattern="^[0-9]+$"><br><br>
+</div>
+<button>Submit</button>
+</form>

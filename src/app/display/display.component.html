@@ -1,0 +1,22 @@
+<div>
+  <table>
+      <thead>
+        <tr>
+          <th>Student Number</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Program</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr *ngFor="let index of studentCollection">
+          <td>{{index.studnum}}</td>
+          <td>{{index.firstname}}</td>
+          <td>{{index.lastname}}</td>
+          <td>{{index.prog}}</td>
+          <td>{{index.year}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
